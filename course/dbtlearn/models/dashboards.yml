@@ -1,0 +1,15 @@
+version: 2
+
+
+exposures:
+  - name: AirBNB
+    type: dashboard
+    maturity: low
+    url: https://0cba041d.us1a.app.preset.io/superset/dashboard/p/wJvjG9dDW0L/
+    description: Executive Dashboard about Airbnb listings and hosts
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_fullmoon_reviews')
+    owner:
+      name: Yogesh Pal
+      email: workyogesh22@gmail.com
